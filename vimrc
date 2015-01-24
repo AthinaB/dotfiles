@@ -11,3 +11,6 @@ set statusline+=%F
 
 "sets the statusbar with full path always visible"
 set laststatus=2
+
+autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
+autocmd Filetype html setlocal ts=4 sts=4 sw=4
