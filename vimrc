@@ -15,5 +15,12 @@ set laststatus=2
 "activate mustache abbreviations"
 let g:mustache_abbreviations = 1
 
+"set starting directoty"
+"'a' - like 'c', but only applies when the current working directory outside"
+"of CtrlP isn't a direct ancestor of the directory of the current file."
+"default value: let g:ctrlp_working_path_mode = 'ra'"
+let g:ctrlp_working_path_mode = 'a'
+
+
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 autocmd Filetype html setlocal ts=4 sts=4 sw=4
