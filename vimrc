@@ -12,6 +12,9 @@ set statusline+=%F
 "sets the statusbar with full path always visible"
 set laststatus=2
 
+"displays every tab char with |____"
+set  list lcs=tab:\|\_
+
 "activate mustache abbreviations"
 let g:mustache_abbreviations = 1
 
