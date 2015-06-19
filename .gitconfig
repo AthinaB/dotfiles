@@ -1,0 +1,39 @@
+[user]
+        name = Athina Bekakou
+        email = athinabek@grnet.gr
+[core]
+        editor = vim
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        interactive = auto
+        ui = true
+        pager = true
+[alias]
+    tree = log --graph --decorate --abbrev-commit --date=relative --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset by %C(yellow)%ae%Creset'
+    visualize = log --graph --decorate --abbrev-commit --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset by %C(yellow)%ae%Creset' --all --simplify-by-decoration
+    latest = "!git for-each-ref --sort=-committerdate --format='%1B[0;34;1m(%(committerdate:relative))%1B[m %1B[0;32m%(refname:short):%1B[m %1B[0;33m%(subject)%1B[m' | less -R"
+    cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d"
+    c = commit
+    ca = commit --amend
+    s = status
+    co = checkout
+    cob = checkout -b
+    logs = log --stat
+    a = add
+    aa = add .
+    plr = pull --rebase
+    ps = push
+    ri = rebase -i
+    ra = rebase --abort
+    rc = rebase --continue
+    d = diff
+[merge]
+    tool = vimdiff
+    ff = false
+    commit = false
+[mergetool]
+    keepBackup=false
+
+
