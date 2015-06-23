@@ -37,3 +37,5 @@
     keepBackup=false
 
 
+[push]
+	default = simple
