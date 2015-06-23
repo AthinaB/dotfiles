@@ -1,13 +1,17 @@
-vim-stuff
+dotfiles
 =========
 
-Experimenting with vim
+Experimenting with dotfiles
 
-This repo has the files that are included in ~/.vim
+This repo has the files that are included in ~/.dotfiles/
 
-In ~/.vim there is also a file named vimrc. This is where should be placed all the info that normally are placed in ~/.vimrc
-So, in every new installation 2 things should be done:
+There is a subdirectory named dots/ which has all the dotfiles that are used for configuration.
+
+Also, it has a subdirectory named .vim/ which has all the necessary vim stuff except .vimrc file (this is included in dots dir)
+
+So, in every new installation these things should be done:
 ```
-clone https://github.com/AthinaB/dotfiles.git ~/dotfiles
-ln -s ~/.dotfiles/vimrc ~/.vimrc
+git clone https://github.com/AthinaB/dotfiles.git ~/.dotfiles
+ln -s ~/.dotfiles/dots/.* .
+ln -s ~/.dotfiles/.vim/ .
 ```
