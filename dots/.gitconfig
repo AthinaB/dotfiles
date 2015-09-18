@@ -35,7 +35,3 @@
     commit = false
 [mergetool]
     keepBackup=false
-
-
-[push]
-	default = simple
