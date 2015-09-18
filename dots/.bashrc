@@ -51,3 +51,6 @@ parse_git_branch() {
 }
 
 export PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[01;32m\]\w\[\033[00m\]\[\033[36m\]$(parse_git_branch)\[\033[00m\]\$ '
+
+# For arcanist (phabricator)
+export PATH=$PATH:~/arcanist/arcanist/bin
