@@ -24,6 +24,10 @@ let g:mustache_abbreviations = 1
 "default value: let g:ctrlp_working_path_mode = 'ra'"
 let g:ctrlp_working_path_mode = 'a'
 
+"NERD Tree open when you type: ; + ne"
+let mapleader = ","
+nmap <leader>ne :NERDTree<cr>
+
 
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype html setlocal ts=4 sts=4 sw=4 expandtab
