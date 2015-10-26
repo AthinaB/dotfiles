@@ -36,6 +36,10 @@ alias rm-snf-static='rm -r ~/synnefo/snf-admin-app/synnefo_admin/admin/static'
 alias cd-ui-web="cd ~/synnefo/snf-ui-app/ui-web/"
 alias run-ember='ember build --output-path="/usr/share/synnefo/static/ui/" --watch'
 
+# Alias for snf-ui repo (new pithos)
+alias cd-snf-ui='cd /var/tmp/snf-ui-app/snf-ui/'
+alias run-ember='ember build --watch --output-path ../synnefo_ui/static/snf-ui'
+
 
 # Alias for tmux cmds
 
