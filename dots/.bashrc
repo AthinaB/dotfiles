@@ -58,3 +58,8 @@ export PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[01;32m\]\w\[\033[00m\]\[\033[36
 
 # For arcanist (phabricator)
 export PATH=$PATH:~/arcanist/arcanist/bin
+
+# for git auto-completion
+# the git-completion.bash file download it from:
+# https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+source ~/.git-completion.bash
