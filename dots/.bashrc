@@ -46,6 +46,8 @@ alias run-ember='ember build --watch --output-path ../synnefo_ui/static/snf-ui'
 alias tmux-new='tmux new -s'
 alias tmux-attach='tmux attach-session -t'
 
+# General purpose aliases
+alias less='less -R'
 
 # From dgrig
 # Shows git branch after path
