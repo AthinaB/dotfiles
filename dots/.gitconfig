@@ -29,6 +29,9 @@
     ra = rebase --abort
     rc = rebase --continue
     d = diff
+    br = branch
+    bral = branch --all
+
 [merge]
     tool = vimdiff
     ff = false
