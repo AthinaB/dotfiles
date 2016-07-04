@@ -24,15 +24,15 @@ alias size='du -sh'
 # Alias for admin UI
 
 # Go to the folder of the static files of admin in *synnefo*
-alias cd-snf-static='cd ~/synnefo/snf-admin-app/synnefo_admin/admin/static/'
+alias cd-snf-static='cd /var/tmp/synnefo/snf-admin-app/synnefo_admin/admin/static/'
 
 # Go to the folder of the static files of admin in *usr/share*
-alias cd-share-static='cd ~/../usr/share/synnefo/static/admin'
+alias cd-share-static='cd /usr/share/synnefo/static/admin'
 
-alias cp2snf='cp -r ~/../usr/share/synnefo/static/admin ~/synnefo/snf-admin-app/synnefo_admin/admin/static'
-alias cp2share='cp -r ~/synnefo/snf-admin-app/synnefo_admin/admin/static/ ~/../usr/share/synnefo/static/admin'
-alias rm-share-static='rm -r ~/../usr/share/synnefo/static/admin/'
-alias rm-snf-static='rm -r ~/synnefo/snf-admin-app/synnefo_admin/admin/static'
+alias cp2snf='cp -r /usr/share/synnefo/static/admin/ /var/tmp/synnefo/snf-admin-app/synnefo_admin/admin/static'
+alias cp2share='cp -r /var/tmp/synnefo/snf-admin-app/synnefo_admin/admin/static/ /usr/share/synnefo/static/admin'
+alias rm-share-static='rm -r /usr/share/synnefo/static/admin/'
+alias rm-snf-static='rm -r /var/tmp/synnefo/snf-admin-app/synnefo_admin/admin/static'
 
 
 # Alias for Ember UI
