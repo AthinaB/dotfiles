@@ -6,12 +6,6 @@ filetype plugin indent on
 "displays the number of lines"
 set number
 
-"displays full path in statusbar"
-set statusline+=%F
-
-"sets the statusbar with full path always visible"
-set laststatus=2
-
 "displays every tab char with |____"
 set  list lcs=tab:\|\_
 
@@ -28,3 +22,21 @@ autocmd Filetype html.handlebars setlocal ts=4 sts=4 sw=4 expandtab
 autocmd Filetype scss setlocal ts=4 sts=4 sw=4 expandtab
 autocmd Filetype gitcommit setlocal spell
 autocmd BufRead,BufNewFile *.md setlocal spell
+
+"always show status line"
+set laststatus=2
+
+"format status line"
+set statusline=%F%m%r%h%w[%L][%{&ff}]%y[%p%%][%04l,%04v]
+"              | | | | |  |   |      |  |     |    |
+"              | | | | |  |   |      |  |     |    + current column
+"              | | | | |  |   |      |  |     +-- current line
+"              | | | | |  |   |      |  +-- current % into file
+"              | | | | |  |   |      +-- current syntax in square brackets
+"              | | | | |  |   +-- current fileformat
+"              | | | | |  +-- number of lines
+"              | | | | +-- preview flag in square brackets
+"              | | | +-- help flag in square brackets
+"              | | +-- readonly flag in square brackets
+"              | +-- rodified flag in square brackets
+"              +-- full path to file in the buffer
