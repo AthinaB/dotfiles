@@ -18,6 +18,9 @@ let g:mustache_abbreviations = 1
 "default value: let g:ctrlp_working_path_mode = 'ra'"
 let g:ctrlp_working_path_mode = 'a'
 
+"wrap to 80 chars"
+set textwidth=80
+
 autocmd Filetype html.handlebars setlocal ts=4 sts=4 sw=4 expandtab
 autocmd Filetype scss setlocal ts=4 sts=4 sw=4 expandtab
 autocmd Filetype gitcommit setlocal spell
