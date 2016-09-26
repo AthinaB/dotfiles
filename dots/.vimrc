@@ -16,7 +16,8 @@ let g:mustache_abbreviations = 1
 "'a' - like 'c', but only applies when the current working directory outside"
 "of CtrlP isn't a direct ancestor of the directory of the current file."
 "default value: let g:ctrlp_working_path_mode = 'ra'"
-let g:ctrlp_working_path_mode = 'a'
+"let g:ctrlp_working_path_mode = 'a'"
+set wildignore+=*/tmp/*,*/node_modules/*,*/bower_components/*,*.so,*.swp,*.zip
 
 "wrap to 80 chars"
 set textwidth=80
