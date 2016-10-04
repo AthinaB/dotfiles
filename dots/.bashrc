@@ -15,6 +15,8 @@
 # general
 alias lsa='ls -a'
 alias size='du -sh'
+alias mv='mv -v'
+
 #
 # Some more alias to avoid making mistakes:
 # alias rm='rm -i'
