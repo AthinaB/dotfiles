@@ -9,6 +9,10 @@ set number
 "displays every tab char with |____"
 set  list lcs=tab:\|\_
 
+"characters that should be matching pairs"
+let delimitMate_matchpairs = "(:),[:],{:},"
+
+
 "activate mustache abbreviations"
 let g:mustache_abbreviations = 1
 
