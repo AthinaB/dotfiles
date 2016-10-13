@@ -12,6 +12,8 @@ set  list lcs=tab:\|\_
 "characters that should be matching pairs"
 let delimitMate_matchpairs = "(:),[:],{:},"
 
+"filenames that the closetag will work"
+let g:closetag_filenames = "*.html,*.hbs,*.js,*.ts"
 
 "activate mustache abbreviations"
 let g:mustache_abbreviations = 1
