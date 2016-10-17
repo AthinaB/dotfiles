@@ -3,6 +3,11 @@ execute pathogen#helptags()
 syntax on
 filetype plugin indent on
 
+"colors settings"
+let g:solarized_termcolors=256
+colorscheme solarized
+set background=dark
+
 "displays the number of lines"
 set number
 
