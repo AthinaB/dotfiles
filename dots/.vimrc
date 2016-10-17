@@ -8,6 +8,9 @@ let g:solarized_termcolors=256
 colorscheme solarized
 set background=dark
 
+"bottom line"
+hi statusline ctermfg=89 ctermbg=15
+
 "displays the number of lines"
 set number
 
