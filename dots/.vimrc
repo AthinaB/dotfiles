@@ -42,7 +42,7 @@ autocmd BufRead,BufNewFile *.md setlocal spell
 set laststatus=2
 
 "format status line"
-set statusline=%F%m%r%h%w[%L][%{&ff}]%y[%p%%][%04l,%04v]
+set statusline=[\ %F%m%r%h%w\ ]\ \ [%L][%{&ff}]%y[%p%%][%04l,%04v]
 "              | | | | |  |   |      |  |     |    |
 "              | | | | |  |   |      |  |     |    + current column
 "              | | | | |  |   |      |  |     +-- current line
