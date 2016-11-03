@@ -27,6 +27,12 @@ set number
 "displays every tab char with |____"
 set  list lcs=tab:\|\_
 
+"insert mode that removes source indentation"
+set paste
+
+"paste: toggle mode to keep or remove source indentation"
+set pastetoggle=<C-S-v>
+
 "characters that should be matching pairs"
 let delimitMate_matchpairs = "(:),[:],{:},"
 
