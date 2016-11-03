@@ -33,6 +33,9 @@ set paste
 "paste: toggle mode to keep or remove source indentation"
 set pastetoggle=<C-S-v>
 
+"enable mouse in all modes"
+set mouse=a
+
 "characters that should be matching pairs"
 let delimitMate_matchpairs = "(:),[:],{:},"
 
