@@ -8,6 +8,18 @@ let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
 
+"search: case insensitive"
+set ignorecase
+
+"search:  if a pattern contains an uppercase letter, it is case sensitive,"
+"otherwise, it is not"
+set smartcase
+
+"search: move the cursor to the matched string, while typing the search pattern"
+set incsearch
+
+"search: highlight matches"
+set hlsearch
 
 "displays the number of lines"
 set number
