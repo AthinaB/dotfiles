@@ -5,11 +5,9 @@ filetype plugin indent on
 
 "colors settings"
 let g:solarized_termcolors=256
-colorscheme solarized
 set background=dark
+colorscheme solarized
 
-"bottom line"
-hi statusline ctermfg=89 ctermbg=15
 
 "displays the number of lines"
 set number
@@ -40,6 +38,9 @@ autocmd BufRead,BufNewFile *.md setlocal spell
 
 "always show status line"
 set laststatus=2
+
+"colors for status line"
+hi statusline ctermfg=89 ctermbg=15
 
 "format status line"
 set statusline=[\ %F%m%r%h%w\ ]\ \ [%L][%{&ff}]%y[%p%%][%04l,%04v]
