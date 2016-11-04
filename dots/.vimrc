@@ -16,10 +16,14 @@ set ignorecase
 set smartcase
 
 "search: move the cursor to the matched string, while typing the search pattern"
+
 set incsearch
 
 "search: highlight matches"
 set hlsearch
+
+"search: unhighlight matches until next search"
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 "displays the number of lines"
 set number
