@@ -14,59 +14,11 @@
 
 # general
 alias lsa='ls -a'
-alias size='du -sh'
-alias mv='mv -v'
 
-#
-# Some more alias to avoid making mistakes:
-# alias rm='rm -i'
-# alias cp='cp -i'
-# alias mv='mv -i'
-
-# Alias for admin UI
-
-# Go to the folder of the static files of admin in *synnefo*
-alias cd-snf-static='cd /var/tmp/synnefo/snf-admin-app/synnefo_admin/admin/static/'
-
-# Go to the folder of the static files of admin in *usr/share*
-alias cd-share-static='cd /usr/share/synnefo/static/admin'
-
-alias cp2snf='cp -r /usr/share/synnefo/static/admin/ /var/tmp/synnefo/snf-admin-app/synnefo_admin/admin/static'
-alias cp2share='cp -r /var/tmp/synnefo/snf-admin-app/synnefo_admin/admin/static/ /usr/share/synnefo/static/admin'
-alias rm-share-static='rm -r /usr/share/synnefo/static/admin/'
-alias rm-snf-static='rm -r /var/tmp/synnefo/snf-admin-app/synnefo_admin/admin/static'
-
-
-# Alias for Ember UI
-
-alias cd-ui-web="cd ~/synnefo/snf-ui-app/ui-web/"
-alias run-ember='ember build --output-path="/usr/share/synnefo/static/ui/" --watch'
-
-# Alias for snf-ui repo (new pithos)
-alias cd-snf-ui='cd /var/tmp/snf-ui-app/snf-ui/'
-alias run-ember='ember build --watch --output-path ../synnefo_ui/static/snf-ui'
-
-
-# Run ember and serve it in a particular ip and port
-alias ember-vm='ember serve --host 0.0.0.0 --port 8000'
-
-# Apella reset ALL and run
-alias apella-reset='rm /tmp/apella/db.sqlite3;\
-	python manage.py makemigrations apella;\
-	python manage.py migrate;\
-	python run_transcript.py trascript.json;\
-	python  manage.py runserver 0.0.0.0:8000'
-
-# Run server for Apella
-alias apella-run='python  manage.py runserver 0.0.0.0:8000'
-
-# Alias for tmux cmds
-
-alias tmux-new='tmux new -s'
-alias tmux-attach='tmux attach-session -t'
-
-# General purpose aliases
-alias less='less -R'
+# If there is a file aliases use it
+if [ -f ~/.aliases ]; then
+    . ~/.aliases
+fi
 
 # From dgrig
 # Shows git branch after path
