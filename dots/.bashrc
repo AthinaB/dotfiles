@@ -47,6 +47,19 @@ alias cd-snf-ui='cd /var/tmp/snf-ui-app/snf-ui/'
 alias run-ember='ember build --watch --output-path ../synnefo_ui/static/snf-ui'
 
 
+# Run ember and serve it in a particular ip and port
+alias ember-vm='ember serve --host 0.0.0.0 --port 8000'
+
+# Apella reset ALL and run
+alias apella-reset='rm /tmp/apella/db.sqlite3;\
+	python manage.py makemigrations apella;\
+	python manage.py migrate;\
+	python run_transcript.py trascript.json;\
+	python  manage.py runserver 0.0.0.0:8000'
+
+# Run server for Apella
+alias apella-run='python  manage.py runserver 0.0.0.0:8000'
+
 # Alias for tmux cmds
 
 alias tmux-new='tmux new -s'
@@ -71,3 +84,6 @@ export PATH=$PATH:~/arcanist/arcanist/bin
 # the git-completion.bash file download it from:
 # https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 source ~/.git-completion.bash
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source /usr/local/bin/virtualenvwrapper.sh
