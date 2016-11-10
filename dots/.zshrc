@@ -85,3 +85,12 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 source $HOME/.aliases
+
+# virtualenvs (use for apella atm)
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source /usr/local/bin/virtualenvwrapper.sh
+
+
+# arc
+export PATH=$PATH:~/repos/arcanist/bin
