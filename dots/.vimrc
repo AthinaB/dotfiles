@@ -3,6 +3,7 @@ execute pathogen#helptags()
 syntax on
 filetype plugin indent on
 
+
 "colors settings"
 let g:solarized_termcolors=256
 set background=dark
@@ -54,7 +55,7 @@ let g:mustache_abbreviations = 1
 "of CtrlP isn't a direct ancestor of the directory of the current file."
 "default value: let g:ctrlp_working_path_mode = 'ra'"
 "let g:ctrlp_working_path_mode = 'a'"
-set wildignore+=*/tmp/*,*/node_modules/*,*/bower_components/*,*.so,*.swp,*.zip
+set wildignore+=home/*/tmp/*,*/node_modules/*,*/bower_components/*,*.so,*.swp,*.swo,*.zip
 
 "wrap to 80 chars"
 set textwidth=80
