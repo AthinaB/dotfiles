@@ -14,7 +14,7 @@ So, in every new installation these things should be done:
 git clone https://github.com/AthinaB/dotfiles.git ~/.dotfiles
 ln -s ~/.dotfiles/dots/.* .
 ln -s ~/.dotfiles/.vim/ .
-source .bashrc
+source .zshrc
 cd .vim
 git submodule init
 git submodule update

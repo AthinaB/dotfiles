@@ -1,13 +1,33 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+IAM=$(uname)
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/root/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
+echo "Dots for ${IAM}!"
+# Theme per setup
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="muse"
+#
+# MAC
+if [ "$IAM" = "Darwin" ]; then
+
+	export ZSH_THEME="pygmalion"
+
+# DEBIAN VMS
+elif [ "$IAM" = "Linux" ]; then
+
+	export ZSH_THEME="muse"
+
+else
+	echo "Unknown system: ${IAM}..."
+	export ZSH_THEME="robbyrussell"
+fi
+
+
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -86,11 +106,16 @@ source $ZSH/oh-my-zsh.sh
 
 source $HOME/.aliases
 
-# virtualenvs (use for apella atm)
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Devel
-source /usr/local/bin/virtualenvwrapper.sh
+# DEBIAN VMS
+if [ "$IAM" = "Linux" ]; then
+	echo "virtualenvs n arc settings"
+
+	# virtualenvs (use for apella atm)
+	export WORKON_HOME=$HOME/.virtualenvs
+	export PROJECT_HOME=$HOME/Devel
+	source /usr/local/bin/virtualenvwrapper.sh
 
 
-# arc
-export PATH=$PATH:~/repos/arcanist/bin
+	# arc
+	export PATH=$PATH:~/repos/arcanist/bin
+fi
