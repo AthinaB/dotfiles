@@ -32,12 +32,6 @@ set number
 "displays every tab char with |____"
 set  list lcs=tab:\|\_
 
-"insert mode that removes source indentation"
-set paste
-
-"paste: toggle mode to keep or remove source indentation"
-set pastetoggle=<C-S-v>
-
 "enable mouse in all modes"
 "set mouse=a"
 
