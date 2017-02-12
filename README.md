@@ -13,6 +13,7 @@ So, in every new installation these things should be done:
 ```
 git clone https://github.com/AthinaB/dotfiles.git ~/.dotfiles
 ln -s ~/.dotfiles/dots/.* .
+ln -s ~/.dotfiles/aliases/.* .
 ln -s ~/.dotfiles/.vim/ .
 source .zshrc
 cd .vim

@@ -1,0 +1,4 @@
+# general
+alias size='du -sh'
+alias mv='mv -v'
+alias less='less -R'
