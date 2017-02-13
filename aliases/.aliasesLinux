@@ -28,7 +28,7 @@ alias run-ember='ember build --watch --output-path ../synnefo_ui/static/snf-ui'
 # APELLA
 # --------
 # Apella reset ALL and run
-alias apella-reset='rm /tmp/apella/db.sqlite3;\
+alias apella-reset='rm /tmp/apella.sqlite3;\
 	python manage.py makemigrations apella;\
 	python manage.py migrate;\
 	python run_transcript.py trascript.json;\
