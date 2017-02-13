@@ -2,3 +2,5 @@
 alias size='du -sh'
 alias mv='mv -v'
 alias less='less -R'
+alias gsh='git stash'
+alias gshp='git stash pop'
