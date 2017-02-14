@@ -112,6 +112,12 @@ if [ "$IAM" = "Darwin" ]; then
 
 	fpath=(/usr/local/share/zsh-completions $fpath)
 
+	# The React Native command line interface requires the ANDROID_HOME
+	# environment variable to be set up.
+	export ANDROID_HOME=${HOME}/Library/Android/sdk
+	export PATH=${PATH}:${ANDROID_HOME}/tools
+	export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+
 # DEBIAN VMS
 elif [ "$IAM" = "Linux" ]; then
 	echo "virtualenvs n arc settings"
