@@ -107,8 +107,13 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.aliases
 source $HOME/.aliases${IAM}
 
+# MAC
+if [ "$IAM" = "Darwin" ]; then
+
+	fpath=(/usr/local/share/zsh-completions $fpath)
+
 # DEBIAN VMS
-if [ "$IAM" = "Linux" ]; then
+elif [ "$IAM" = "Linux" ]; then
 	echo "virtualenvs n arc settings"
 
 	# virtualenvs (use for apella atm)
