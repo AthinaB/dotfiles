@@ -1,0 +1,29 @@
+#!/bin/bash
+
+cd "apo_athina/3dig";
+IFS='
+';
+
+# find filenames with double space
+# find -name "*  *" -type f
+# replace double space with single
+# find -name "*  *" -type f | rename 's/  / /g'
+
+for x in `ls `;
+do
+	OLD=$x;
+	# the num without the dot at the start of the name
+	NUM=${x:0:2};
+	#echo $NUM;
+	NONUM=`echo $x | sed -r 's/.{4}//'`
+	#echo $NONUM;
+	LASTCHARS=${x: -9};
+	#echo $LASTCHARS;
+	NOEND=`echo ${NONUM::-9}`
+	#echo $NOEND
+	NEW="$NOEND[$NUM] $LASTCHARS"
+	#echo $NEW
+	mv "$OLD" "$NEW" -v;
+	#echo "$OLD --> $NEW"
+done;
+echo ${aa[@]};
