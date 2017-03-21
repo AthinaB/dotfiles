@@ -3,6 +3,8 @@ execute pathogen#helptags()
 syntax on
 filetype plugin indent on
 
+set conceallevel=1
+let g:indentLine_conceallevel=1
 
 "colors settings"
 let g:solarized_termcolors=256
@@ -81,3 +83,13 @@ set statusline=[\ %F%m%r%h%w\ ]\ \ [%L][%{&ff}]%y[%p%%][%04l,%04v]
 set langmap=ΑA,ΒB,ΨC,ΔD,ΕE,ΦF,ΓG,ΗH,ΙI,ΞJ,ΚK,ΛL,ΜM,ΝN,ΟO,ΠP,QQ,ΡR
 set langmap+=ΣS,ΤT,ΘU,ΩV,WW,ΧX,ΥY,ΖZ,αa,βb,ψc,δd,εe,φf,γg,ηh,ιi,ξj
 set langmap+=κk,λl,μm,νn,οo,πp,qq,ρr,σs,τt,θu,ωv,ςw,χx,υy,ζz
+
+"syntastic settings"
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
