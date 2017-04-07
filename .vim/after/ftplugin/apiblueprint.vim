@@ -1,2 +1,2 @@
-set ts=2 sts=2 sw=2 expandtab
-setlocal spell spelllang=en_us,el
+set ts=4 sts=4 sw=4 expandtab
+setlocal spell spelllang=en_us
