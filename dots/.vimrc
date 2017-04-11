@@ -57,6 +57,8 @@ set wildignore+=home/*/tmp/*,*/node_modules/*,*/bower_components/*,*.so,*.swp,*.
 set textwidth=80
 
 autocmd BufRead,BufNewFile *.md setlocal spell
+"Remove trailing whitespace"
+autocmd BufWritePre * %s/\s\+$//e
 
 "always show status line"
 set laststatus=2
