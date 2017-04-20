@@ -117,6 +117,7 @@ if [ "$IAM" = "Darwin" ]; then
 	export ANDROID_HOME=${HOME}/Library/Android/sdk
 	export PATH=${PATH}:${ANDROID_HOME}/tools
 	export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+	export APELLA_TEST_BASE_URL="http://83.212.98.164:8000/apella/ui"
 
 # DEBIAN VMS
 elif [ "$IAM" = "Linux" ]; then
