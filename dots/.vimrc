@@ -11,6 +11,10 @@ let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
 
+"color current line"
+set cursorline
+hi CursorLine   cterm=NONE ctermbg=black
+
 "search: case insensitive"
 set ignorecase
 
