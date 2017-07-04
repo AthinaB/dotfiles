@@ -22,6 +22,7 @@ elif [ "$IAM" = "Linux" ]; then
 else
 	echo "Unknown system: ${IAM}..."
 	export ZSH_THEME="robbyrussell"
+	export APELLA_PASSWORD_FROM_JSON='/etc/apella/users.json'
 fi
 
 # utf8 for greek characters
