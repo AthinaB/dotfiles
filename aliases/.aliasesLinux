@@ -44,3 +44,7 @@ alias apella-ember='ember build --watch --environment=development'
 alias cd-gen='cd ~/repos/ember-cli-gen/addon'
 alias cd-apipas='cd ~/repos/apimas'
 alias cd-apella='~/repos/apella/ui/app'
+
+# SSP
+alias cd-ssp='cd /srv/simplesamlphp/ui'
+alias cd-ssp-theme='cd /srv/simplesamlphp/ui/simplesamlphp-module-theme-vanilla'
