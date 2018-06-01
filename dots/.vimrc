@@ -1,7 +1,10 @@
 execute pathogen#infect()
 execute pathogen#helptags()
 syntax on
+filetype plugin on
+"automatic indentation as you type"
 filetype plugin indent on
+set ts=2 sts=2 sw=2 expandtab
 
 set conceallevel=1
 let g:indentLine_conceallevel=1
