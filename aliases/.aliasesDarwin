@@ -1,0 +1,2 @@
+# Use git installed by user, with brew NOT the pre-installed
+alias git='/usr/local/bin/git'
