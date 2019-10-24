@@ -28,6 +28,12 @@
 [submodule ".vim/bundle/apiblueprint.vim"]
 	path = .vim/bundle/apiblueprint.vim
 	url = https://github.com/kylef/apiblueprint.vim.git
+[submodule ".vim/bundle/vim-latex-live-preview"]
+	path = .vim/bundle/vim-latex-live-preview
+	url = https://github.com/xuhdev/vim-latex-live-preview.git
 [submodule ".vim/bundle/vim-jsx-improve"]
 	path = .vim/bundle/vim-jsx-improve
 	url = https://github.com/neoclide/vim-jsx-improve.git
+[submodule ".vim/bundle/vim-prettier"]
+	path = .vim/bundle/vim-prettier
+	url = https://github.com/prettier/vim-prettier
