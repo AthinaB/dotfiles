@@ -139,3 +139,8 @@ elif [ "$IAM" = "Linux" ]; then
 	# arc
 	export PATH=$PATH:~/repos/arcanist/bin
 fi
+
+# OPAM configuration
+. /Users/ab/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
