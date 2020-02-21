@@ -12,7 +12,11 @@ echo "Dots for ${IAM}!"
 # MAC
 if [ "$IAM" = "Darwin" ]; then
 
-	export ZSH_THEME="pygmalion"
+	export ZSH_THEME="muse"
+  export REACT_EDITOR="vi"
+  export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2.7
+  export WORKON_HOME=$HOME/.virtualenvs
+  source /usr/local/bin/virtualenvwrapper.sh
 
 # DEBIAN VMS
 elif [ "$IAM" = "Linux" ]; then
