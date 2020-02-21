@@ -67,6 +67,11 @@ autocmd BufRead,BufNewFile *.md setlocal spell
 "Remove trailing whitespace"
 autocmd BufWritePre * %s/\s\+$//e
 
+"Run prettier on save in specific projects"
+autocmd BufWritePre /Users/ab/repos/dilosi/**.js :Prettier
+autocmd BufWritePre /Users/ab/repos/car_crashes/**.js :Prettier
+au BufRead,BufNewFile **.ts  setfiletype typescript
+
 "always show status line"
 set laststatus=2
 
