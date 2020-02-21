@@ -1,2 +1,3 @@
 # Use git installed by user, with brew NOT the pre-installed
 alias git='/usr/local/bin/git'
+alias get-apk='cd ~/repos/bdr/android && ./gradlew clean && echo "Clean ok..." && ./gradlew assembleRelease && cd -'
