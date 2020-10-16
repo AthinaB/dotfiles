@@ -39,7 +39,7 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 set number
 
 "displays every tab char with |____"
-set  list lcs=tab:\|\_
+" set  list lcs=tab:\|\_
 
 "enable mouse in all modes"
 "set mouse=a"
@@ -68,8 +68,14 @@ autocmd BufRead,BufNewFile *.md setlocal spell
 autocmd BufWritePre * %s/\s\+$//e
 
 "Run prettier on save in specific projects"
-autocmd BufWritePre /Users/ab/repos/dilosi/**.js :Prettier
-autocmd BufWritePre /Users/ab/repos/car_crashes/**.js :Prettier
+" let g:prettier#config#config_precedence = 'file-override'
+
+" autocmd BufWritePre /Users/ab/repos/dilosi/**.js :Prettier
+" autocmd BufWritePre /Users/ab/repos/car_crashes/**.js :Prettier
+" autocmd BufWritePre /Users/ab/repos/preschool-enrollment/ui/**.js :Prettier
+" autocmd BufWritePre /Users/ab/repos/preschool-enrollment/**.ts :Prettier
+" autocmd BufWritePre /Users/ab/repos/preschool-enrollment/**.tsx :Prettier
+" autocmd BufWritePre /Users/ab/repos/me/**.js :Prettier
 au BufRead,BufNewFile **.ts  setfiletype typescript
 
 "always show status line"
@@ -99,18 +105,33 @@ set langmap+=ΣS,ΤT,ΘU,ΩV,WW,ΧX,ΥY,ΖZ,αa,βb,ψc,δd,εe,φf,γg,ηh,ιi,
 set langmap+=κk,λl,μm,νn,οo,πp,qq,ρr,σs,τt,θu,ωv,ςw,χx,υy,ζz
 
 "syntastic settings"
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+"
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+let g:ale_fixers = {
+      \  'javascript': ['eslint'],
+      \  'typescript': ['eslint']
+\}
+let g:ale_linters = {
+      \  'javascript': ['eslint'],
+      \  'typescript': ['eslint']
+\}
 
-let bdr_head_path = expand('%:p:h')
-let bdr_dir = '/bdr/'
-if bdr_head_path =~ bdr_dir
-  let g:syntastic_javascript_checkers = ['eslint']
-  let g:syntastic_javascript_eslint_exe = 'npm run lint -- '
-endif
+let g:ale_sign_column_always = 1
+let g:airline#extensions#ale#enabled = 1
+let g:ale_fix_on_save = 1
+let g:ale_sign_error = '>>'
+let g:ale_sign_warning = '--'
+"
+" let bdr_head_path = expand('%:p:h')
+" let bdr_dir = '/bdr/'
+" if bdr_head_path =~ bdr_dir
+"   let g:syntastic_javascript_checkers = ['eslint']
+"   let g:syntastic_javascript_eslint_exe = 'npm run lint -- '
+" endif
